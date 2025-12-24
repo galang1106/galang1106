@@ -1,7 +1,9 @@
-// JavaScript for future functionalities (e.g., adding products to cart)
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".product button");
 
-document.querySelectorAll('.product button').forEach(button => {
-  button.addEventListener('click', () => {
-    alert('Item added to cart!');
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      alert("Item added to cart!");
+    });
   });
 });
